@@ -24,7 +24,7 @@ set(CUDA_NVCC_FLAGS ${CUDA_NVCC_FLAGS}
     --default-language c++)
 
 # Добавьте источник в исполняемый файл этого проекта.
-add_executable (CudaRuntime "CudaRuntime.cu" "CudaRuntime.h")
+add_executable (CudaRuntime "CudaRuntime.cu" "CudaRuntime.h" "common/book.h")
 
 # Настройки для целевого объекта
 set_target_properties(CudaRuntime
